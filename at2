@@ -1,0 +1,19 @@
+<?php 
+
+// 2. Faça uma função que calcule a hipotenusa. Os catetos são os dados de entrada e a
+//hipotenusa é o dado de saída.
+
+function conta ($ca,$cb){
+$conta=sqrt(pow ($ca,2)+pow($cb,2));
+return $conta;
+}
+
+print"Digite o cateto a";
+$ca=(float)fgets(STDIN);
+
+
+print"Digite o cateto ab";
+$cb=(float)fgets(STDIN);
+
+$hipotenusa= conta($ca,$cb);
+print"A hipotenusa é $hipotenusa";
