@@ -5,9 +5,21 @@
 //de saída. Utilize a fórmula C = (F - 32) * 5/9, onde F é a temperatura em Fahrenheit e
 //C é a temperatura em Celsius.
 
-print"Digite a temperatura em graus Fahrenheit que deseja converter para Celsius\n";
-$num= (float) fgets(STDIN);
+function celsius ($n){
 
-$celsius=($num-32)*5/9;
 
-print"A temperatura $num convertida em calsius equivale a $celsius";
+$celsius=($n-32)*5/9;
+
+return $celsius;
+}
+
+
+
+
+
+print"Digite a temperatura em graus Fahrenheit: ";
+$n= (float) fgets(STDIN);
+
+
+$celsius = celsius ($n);
+print "Graus em Celsius: $celsius\n";
